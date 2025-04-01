@@ -11,4 +11,4 @@ def test_kpi_calculation():
     weights = {'sales': 0.4, 'new_clients': 0.3, 'satisfaction': 0.3}
     result = calculate_kpi(data, weights)
     assert round(result['KPI'][0], 2) == 64.95  # 150*0.4 + 12*0.3 + 4.5*0.3 = 64.95
-    assert round(result['KPI'][1], 2) == 37.26  # 90*0.4 + 5*0.3 + 3.2*0.3 = 37.26
+    assert round(result['KPI'][1], 2) == 38.46  # Исправлено с 37.26 на 38.46
